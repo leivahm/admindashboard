@@ -512,9 +512,9 @@ main .recent-orders a {
     display: flex;
 }
 
-.right .sales-analytics .item.offline {
+/* .right .sales-analytics .item.offline {
     background-color: var(--color-danger);
-}
+} */
 
 .right .sales-analytics .item.customers .icon {
     background-color: var(--color-success);
@@ -600,7 +600,7 @@ main .recent-orders a {
 
     aside {
         position: fixed;
-        left: 0;
+        left: -110;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -608,6 +608,13 @@ main .recent-orders a {
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
+        animation: ShowMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
     }
 
     aside .logo {
@@ -692,6 +699,6 @@ main .recent-orders a {
     }
 
     .right .top button span {
-
+        font-size: 2rem;
     }
 }
