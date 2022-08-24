@@ -556,7 +556,7 @@ main .recent-orders a {
 }
 
 /* ================ MEDIA QUERIES ================ */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1414px) { /*max-width original es 1200*/
     .container {
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
@@ -612,7 +612,7 @@ main .recent-orders a {
     .container {
         width: 100%;
         grid-template-columns: 1fr;
-    }
+    } /* La última línea coloca todo el contenido en columna */
 
     aside {
         position: fixed;
