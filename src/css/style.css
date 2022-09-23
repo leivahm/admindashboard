@@ -152,7 +152,7 @@ aside {
 aside .top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /*space-between to center*/
     margin-top: 1.4rem;
 }
 
@@ -161,7 +161,8 @@ aside .logo {
     gap: 0.8rem;
 }
 
-aside .logo img {
+aside .logo .men {
+    font-size: 2.3rem;
     width: 2.3rem;
     height: 2.3rem;
 }

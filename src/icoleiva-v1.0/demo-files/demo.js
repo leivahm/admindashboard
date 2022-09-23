@@ -1,4 +1,4 @@
-if (!('boxShadow' in document.body.style)) {
+if (!('boxShadow' in document.body.styles)) {
     document.body.setAttribute('class', 'noBoxShadow');
 }
 
