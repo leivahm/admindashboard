@@ -14,7 +14,7 @@ closeBtn.addEventListener('click', () => {
     sideMenu.style.display = 'none';
 })
 
-// chande theme
+// change theme
 themeToggler.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme-variables');
 
