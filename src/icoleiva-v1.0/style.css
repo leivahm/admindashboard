@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icoleiva';
+  src:
+    url('fonts/icoleiva.ttf?s9l3yt') format('truetype'),
+    url('fonts/icoleiva.woff?s9l3yt') format('woff'),
+    url('fonts/icoleiva.svg?s9l3yt#icoleiva') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.men {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icoleiva' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.men-fcsketch .path1:before {
+  content: "\e900";
+  color: rgb(155, 155, 154);
+}
+.men-fcsketch .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(155, 155, 154);
+}
+.men-fcsketch .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(29, 29, 27);
+}
+.men-fcsketch .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(29, 29, 27);
+}
+.men-fctext:before {
+  content: "\e904";
+}
+.men-fcpesa:before {
+  content: "\e905";
+}
+.men-fcrusa:before {
+  content: "\e906";
+}
+.men-fclogo:before {
+  content: "\e907";
+}
