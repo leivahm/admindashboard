@@ -20,10 +20,6 @@ themeToggler.addEventListener('click', () => {
 
     themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-    if (imgchange.src = "/src/img/logo.png") {
-        imgchange.src = "/src/img/logo-white.png"}
-    else
-        imgchange.src = "/src/img/logo.png";
     
     // themeToggler.querySelector('span').classList.toogle('active');
 })
