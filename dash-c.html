@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <title>Panel de Control</title>
@@ -49,13 +51,16 @@
                 <div class="position-sticky pt-md-5">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                            <span class="ml-2">Dashboard</span>
+                          <a class="nav-link active d-flex" aria-current="page" href="#">
+                            <span class="material-icons-sharp">grid_view</span>
+                                <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z"/>
+                            </svg>
+                            <span class="ml-2">Resumen</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
+                            <span class="material-icons-sharp">receipt_long</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                             <span class="ml-2">Órdenes</span>
                           </a>
@@ -75,13 +80,13 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                            <span class="ml-2">Reports</span>
+                            <span class="ml-2">Reportes</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                            <span class="ml-2">Integrations</span>
+                            <span class="ml-2">Integraciones</span>
                           </a>
                         </li>
                     </ul>
@@ -95,7 +100,11 @@
                       <li class="breadcrumb-item active" aria-current="page">Overview</li>
                     </ol>
                 </nav>
+
+                <!-- sidebar content starts in here -->
                 <h1 class="h2">Dashboard</h1>
+
+                <!-- showing four cards -->
                 <div class="row my-4">
                     <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
                         <div class="card">
@@ -138,6 +147,85 @@
                           </div>
                     </div>
                 </div>
+
+                <!-- latest purchases -->
+                <div class="row">
+                    <div class="col-12 col-xl-8 mb-4 mb-lg-0">
+                        <div class="card">
+                            <h5 class="card-header">Latest transactions</h5>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Order</th>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Customer</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">17371705</th>
+                                            <td>Volt Premium Bootstrap 5 Dashboard</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>€61.11</td>
+                                            <td>Aug 31 2020</td>
+                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">17370540</th>
+                                            <td>Pixel Pro Premium Bootstrap UI Kit</td>
+                                            <td>jacob.monroe@company.com</td>
+                                            <td>$153.11</td>
+                                            <td>Aug 28 2020</td>
+                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">17371705</th>
+                                            <td>Volt Premium Bootstrap 5 Dashboard</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>€61.11</td>
+                                            <td>Aug 31 2020</td>
+                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">17370540</th>
+                                            <td>Pixel Pro Premium Bootstrap UI Kit</td>
+                                            <td>jacob.monroe@company.com</td>
+                                            <td>$153.11</td>
+                                            <td>Aug 28 2020</td>
+                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">17371705</th>
+                                            <td>Volt Premium Bootstrap 5 Dashboard</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>€61.11</td>
+                                            <td>Aug 31 2020</td>
+                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">17370540</th>
+                                            <td>Pixel Pro Premium Bootstrap UI Kit</td>
+                                            <td>jacob.monroe@company.com</td>
+                                            <td>$153.11</td>
+                                            <td>Aug 28 2020</td>
+                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                  <a href="#" class="btn btn-block btn-light">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <!-- Another widget will go here -->
+                    </div>
+                  </div>
 
             </main>
         </div>
