@@ -8,7 +8,27 @@
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
     z-index: 99;
   }
+
+  nav.sidebar a {
+    padding: 1.2rem;
+    display: flex;
+  }
+
+  nav.sidebar li a {
+    align-items: center;
+  }
+
+  nav.sidebar li a:hover {
+    color: azure;
+    background: gray;
+  }
   
+  nav.sidebar li a:active {
+    font-weight: bold;
+    color: azure;
+    background: gray;
+  }
+
   @media (max-width: 767.98px) {
     .sidebar {
       top: 11.5rem;

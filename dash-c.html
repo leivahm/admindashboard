@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- GOOGLE MATERIAL ICON -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
@@ -14,10 +16,10 @@
 </head>
 <body>
     <!-- :::::::::: NAV BAR :::::::::: -->
-    <nav class="navbar navbar-light bg-light p-3">
+    <nav class="navbar navbar-light bg-dark p-3">
         <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
-            <a class="navbar-brand" href="#">
-                Simple Dashboard
+            <a class="navbar-brand text-light" href="#">
+                Admin Dashboard
             </a>
             <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,17 +29,28 @@
             <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
         </div>
         <div class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">
-            <div class="mr-3 mt-1">
-                <a class="github-button" href="https://github.com/themesberg/simple-bootstrap-5-dashboard" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star /themesberg/simple-bootstrap-5-dashboard">Star</a>
-            </div>
-            <div class="dropdown">
+            
+            <div class="dropdown mr-3">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                  Hello, John Doe
+                  Hola, Gimena
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Messages</a></li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  <li>
+                        <a class="dropdown-item d-flex bg-warning" href="#">
+                            <span class="material-icons-sharp">construction</span>
+                            <span>Configuración</span>
+                        </a>
+                  </li>
+                  <li>  <a class="dropdown-item d-flex bg-danger" href="#">
+                            <span class="material-icons-sharp">mark_as_unread</span>
+                            <span class="mr-2">Mensajes</span>
+                        </a>
+                  </li>
+                  <li>  <a class="dropdown-item bg-warning" href="#">
+                            <span class="material-icons-sharp">mark_as_unread</span>
+                            <span class="mr-2">Salir</span>
+                        </a>
+                  </li>
                 </ul>
               </div>
         </div>
@@ -53,40 +66,37 @@
                         <li class="nav-item">
                           <a class="nav-link active d-flex" aria-current="page" href="#">
                             <span class="material-icons-sharp">grid_view</span>
-                                <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z"/>
-                            </svg>
                             <span class="ml-2">Resumen</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
                             <span class="material-icons-sharp">receipt_long</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                             <span class="ml-2">Órdenes</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            <span class="material-icons-sharp">inventory</span>
                             <span class="ml-2">Productos</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span class="material-icons-sharp">people</span>
                             <span class="ml-2">Clientes</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                            <span class="material-icons-sharp">report_gmailerrorred</span>
                             <span class="ml-2">Reportes</span>
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                            <span class="ml-2">Integraciones</span>
+                          <a class="nav-link " href="#">
+                            <span class="material-icons-sharp">settings</span>
+                            <span class="ml-2">Configuración</span>
                           </a>
                         </li>
                     </ul>
@@ -102,7 +112,7 @@
                 </nav>
 
                 <!-- sidebar content starts in here -->
-                <h1 class="h2">Dashboard</h1>
+                <h1 class="h2">Resumen</h1>
 
                 <!-- showing four cards -->
                 <div class="row my-4">
@@ -152,17 +162,17 @@
                 <div class="row">
                     <div class="col-12 col-xl-8 mb-4 mb-lg-0">
                         <div class="card">
-                            <h5 class="card-header">Latest transactions</h5>
+                            <h5 class="card-header">Últimas Transacciones</h5>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>
                                           <tr>
-                                            <th scope="col">Order</th>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Customer</th>
+                                            <th scope="col">Orden</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cliente</th>
                                             <th scope="col">Total</th>
-                                            <th scope="col">Date</th>
+                                            <th scope="col">Fecha</th>
                                             <th scope="col"></th>
                                           </tr>
                                         </thead>
